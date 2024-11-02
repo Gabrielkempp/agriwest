@@ -87,7 +87,6 @@ col2.metric(label='Custo Total por Hectare', value=f'R$ {custo_por_hectare:,.2f}
 col2.metric(label='Custo Total da Safra', value=f'R$ {custo_total:,.2f}'.replace(",", "X").replace(".", ",").replace("X", "."), delta='-12% Comparado a ultima safra', delta_color='inverse')
 st.divider()
 # Grafico pie
-col3, col4 = st.columns([0.6, 0.4])
-fig = px.pie(df_custo, names=df_custo['Categoria'],values=df_custo['Partc. Custo'])
-col3.plotly_chart(fig)
+fig = px.pie(df_custo,label='Divisão de custos por categoria' , names=df_custo['Categoria'],values=df_custo['Partc. Custo'])
+st.plotly_chart(fig)
 st.divider()
