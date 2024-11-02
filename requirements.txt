@@ -3,5 +3,5 @@ pandas
 plotly.express
 openpyxl
 pathlib
-PIL
+Pillow
 pdfplumber
