@@ -5,7 +5,7 @@ from PIL import Image
 st.set_page_config('Mapa | Rener', '🗺️', 'wide')
 
 # Caminho do PDF
-pdf_path = "original\\NDVI_16-10-24.pdf"
+pdf_path = "NDVI_16-10-24.pdf"
 
 # Abre o PDF e converte cada página em imagem com resolução mais alta
 with pdfplumber.open(pdf_path) as pdf:
